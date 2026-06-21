@@ -1,0 +1,61 @@
+```
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/build/
+
+# TypeScript
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# Package manager
+package-lock.json
+**/package-lock.json
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE
+.vscode/
+.idea/
+**/.vscode/
+**/.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+**/coverage/
+.nyc_output/
+**/.nyc_output/
+
+# Testing
+**/.pytest_cache/
+**/__pycache__/
+*.pyc
+**/*.pyc
+
+# Turborepo
+.turbo/
+**/.turbo/
+
+# ESLint
+.eslintcache
+**/.eslintcache
+```

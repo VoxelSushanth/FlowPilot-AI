@@ -1,0 +1,35 @@
+{
+  "name": "flowpilot-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The AI Operating System for Distribution, Inventory, and Supply Chain Intelligence",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "db:migrate": "turbo run db:migrate --filter=@flowpilot/database",
+    "db:seed": "turbo run db:seed --filter=@flowpilot/database",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "infra:deploy": "cd infrastructure/terraform && terraform apply -auto-approve"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
